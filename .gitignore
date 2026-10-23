@@ -1,4 +1,2 @@
-*.exe
-*.dll
 __pycache__/
 white rfid

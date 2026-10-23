@@ -111,6 +111,18 @@ Linux `usbhid` refuses interface 1 ("couldn't find an input interrupt endpoint")
 Example: read the factory default →
 `aa 00 12 00 00 0f 00 00 00 01 01 00 00 00 00 00 00 00 00 00 00 1d bb`
 
+## Original Windows software
+
+The vendor's original setup tool is included in [`windows/`](windows/) for reference
+(keep both files in the same folder; also runs under Wine, as in the screenshot above):
+
+| File | SHA-256 |
+|---|---|
+| `windows/0012752907.exe` | `d4384ec546f626cb5a29a7191f4abd9b54464f68ea991a3b0adf8ab0f617de17` |
+| `windows/usb.dll` (`generalHID.dll`) | `c5337e5ccf6be08a1ee64d7b2e04b95963211c69eee442e2081b696b38bb2b83` |
+
+These binaries are the manufacturer's freeware, redistributed unmodified and not covered by the MIT license.
+
 The hidden tabs of the Windows program (Mifare S50/S70, Ultralight, ISO14443B, ISO15693, LED/buzzer
 control) belong to other reader models and are not implemented here.
 
