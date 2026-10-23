@@ -1,0 +1,4 @@
+# White USB-C 125kHz RFID reader (ARM CM0 USB HID Keyboard, ffff:0035)
+# Gives the logged-in user access to the config interface (rfidcfg.py).
+SUBSYSTEM=="usb", ATTR{idVendor}=="ffff", ATTR{idProduct}=="0035", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="ffff", ATTRS{idProduct}=="0035", MODE="0660", TAG+="uaccess"
